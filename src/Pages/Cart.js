@@ -146,10 +146,16 @@ function Cart() {
       <div style={{ position: "absolute", right: "45rem", top: "32rem" }}>
         <Stack direction="horizontal" gap={3}>
           <img src={Kotak}></img>
-          <img
-            src={Kotakk}
-            style={{ position: "absolute", left: "90px" }}
-          ></img>
+
+          <input class="form-control" type="file" id="upload" hidden />
+          <label for="upload">
+            {" "}
+            <img
+              src={Kotakk}
+              style={{ position: "absolute", left: "90px", top: "2rem" }}
+            ></img>
+          </label>
+
           <p
             style={{
               position: "absolute",

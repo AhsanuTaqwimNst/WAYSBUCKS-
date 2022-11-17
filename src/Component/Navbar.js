@@ -27,16 +27,6 @@ function Navs() {
           {showStatus ? (
             <Drops />
           ) : (
-            // <div>
-            //   <Link to="/profile">Profill</Link>
-            //   <Button
-            //     variant="outline-succes"
-            //     onClick={() => setShowStatus(false)}
-            //   >
-            //     Berhasil
-            //   </Button>
-            //
-            // </div>
             <Stack direction="horizontal" gap={3}>
               <Button
                 variant="outline-danger"
@@ -50,12 +40,12 @@ function Navs() {
               <Login
                 show={showLogin}
                 onStatus={() => setShowLogin(false) & setShowStatus(true)}
-                // onRegis={() => setShowLogin(false) & setShowRegister(true)}
+                onRegis={() => setShowLogin(false) & setShowRegister(true)}
                 onHide={() => setShowLogin(false)}
               />
               <Register
                 show={showRegister}
-                // onLogin={() => setShowRegister(false) & setShowLogin(true)}
+                onLogin={() => setShowRegister(false) & setShowLogin(true)}
                 onHide={() => setShowRegister(false)}
               />
             </Stack>

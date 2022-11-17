@@ -46,10 +46,9 @@ export default function Login(props) {
       <Modal.Footer>
         <p href="#" style={{ textDecoration: "none", marginTop: "3rem" }}>
           Don't have an acccount ? Klik{" "}
-          <strong style={{ fontWeight: "bold" }}>Here</strong>
-          {/* <Link to onClick={props.onRegis} style={style.link}>
+          <strong onClick={props.onRegis} style={{ fontWeight: "bold" }}>
             Here
-          </Link> */}
+          </strong>
         </p>
       </Modal.Footer>
     </Modal>

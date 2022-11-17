@@ -55,11 +55,10 @@ export default function Register(props) {
       </Modal.Body>
       <Modal.Footer>
         <p href="#" style={{ textDecoration: "none", marginTop: "3rem" }}>
-          Don't have an acccount ?{" "}
-          <strong style={{ fontWeight: "bold" }}>Here</strong>
-          {/* <Link to onClick={props.onLogin} style={{ fontWeight: "bold" }}>
+          Don't have an acccount ? Klik{" "}
+          <strong onClick={props.onLogin} style={{ fontWeight: "bold" }}>
             Here
-          </Link> */}
+          </strong>
         </p>
       </Modal.Footer>
     </Modal>

@@ -8,8 +8,8 @@ import Toping5 from "../Assets/Toping5.png";
 import Toping6 from "../Assets/Toping6.png";
 import Toping7 from "../Assets/Toping7.png";
 import Toping8 from "../Assets/Toping8.png";
-
-// import { BrowserRouter as Router, Routes, Route, Link  } from 'react-router-dom';
+import { useParams } from "react-router-dom";
+import { products } from "../Component/List";
 
 const style = {
   card: {
@@ -21,16 +21,7 @@ const style = {
   imgProduct: {
     width: "30%",
     height: "80%",
-    // position: "absolute",
   },
-
-  // ImgLogo: {
-  //   position: "absolute",
-  //   width: "125px",
-  //   height: "auto",
-  //   top: "26%",
-  //   left: "9%",
-  // },
 
   cardBody: {
     width: "50%",
@@ -57,7 +48,6 @@ const style = {
   imgToping: {
     width: "25%",
     height: "auto",
-    // position: "absolute",
   },
 
   bgColor: {
@@ -65,18 +55,21 @@ const style = {
   },
 };
 function DetailProduct() {
+  const { id } = useParams();
   return (
     <Container className="my-5 w-90">
       <Card border="light" style={style.card}>
         <Row>
-          <Card.Img style={style.imgProduct} src={Product} />
+          <Card.Img style={style.imgProduct} src={products[id].order} />
 
           <Card.Body className="my-2" style={style.cardBody}>
             <Col>
               <Card.Title style={style.cardTitle}>
-                Ice Coffee Palm Sugar
+                {products[id].name}
               </Card.Title>
-              <Card.Text style={style.cardText}>Rp.27.000</Card.Text>
+              <Card.Text style={style.cardText}>
+                Rp{products[id].price}
+              </Card.Text>
               <div className="mt-5">
                 <Card.Text style={style.cardText}>Toping</Card.Text>
                 <Row xs="4" className="m-2">
