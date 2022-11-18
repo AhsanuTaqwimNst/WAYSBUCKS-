@@ -19,7 +19,13 @@ export default function Profile() {
       >
         <h1 style={{ color: "#BD0707", fontSize: "24px" }}>My Profile</h1>
         <Row>
-          <Card.Img style={{ width: "270px", height: "270px" }} src={Profill} />
+          <Card.Img
+            style={{
+              width: "270px",
+              height: "270px",
+            }}
+            src={Profill}
+          />
           <Col>
             <Card.Body>
               <Card.Title style={{ color: "#613D2B" }}>Full Name</Card.Title>

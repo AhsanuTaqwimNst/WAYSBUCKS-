@@ -56,6 +56,7 @@ export default function Home() {
           </Card.Text>
         </Card.Body>
       </Card>
+
       <Detail />
     </>
   );

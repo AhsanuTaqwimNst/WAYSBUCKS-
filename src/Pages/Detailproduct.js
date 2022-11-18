@@ -1,5 +1,4 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import Product from "../Assets/Images1.png";
 import Toping1 from "../Assets/Toping1.png";
 import Toping2 from "../Assets/Toping2.png";
 import Toping3 from "../Assets/Toping3.png";
@@ -56,6 +55,7 @@ const style = {
 };
 function DetailProduct() {
   const { id } = useParams();
+
   return (
     <Container className="my-5 w-90">
       <Card border="light" style={style.card}>

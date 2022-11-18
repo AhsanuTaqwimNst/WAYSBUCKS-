@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Form, Container } from "react-bootstrap";
 import Rectangle from "../../Assets/Rectangle 5.png";
-import Stack from "react-bootstrap/Stack";
 
 function Product() {
   return (
